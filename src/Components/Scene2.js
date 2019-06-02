@@ -17,8 +17,6 @@ class Scene2 extends React.Component {
   }
 
   drawPond() {
-    console.log("Draw pond!");
-
     var svg = d3
       .select("#pond")
       .append("svg")
@@ -42,8 +40,9 @@ class Scene2 extends React.Component {
     const picture_width = 50;
     var i = 0;
 
-    console.log("There are ", this.state.numFish, " fish ");
+    console.log("There are ", this.state.numFish, " fish left ");
 
+    // Start off by drawing a pond with 8 fish
     for (i = 0; i < 8; i++) {
       var fish_id = "fish" + i;
       svg
@@ -56,7 +55,8 @@ class Scene2 extends React.Component {
         .attr("id", fish_id);
     }
 
-    const n = this.state.numFish;
+    // The number of fish the fisherman should remove
+    const n = 8 - this.state.numFish;
     const maxFish = 8;
 
     var fisherman_id = "#fisher";
@@ -88,16 +88,8 @@ class Scene2 extends React.Component {
         var xpos = "" + x_locations[i];
         var ypos = y_locations[i] - 100;
         var ypos_string = "" + ypos;
-        //fisherman_trans.delay(function(d,i){ return 1500*i; }).attr("transform", trans).duration(1000);
-        //svg.select(fisherman_id).attr('x', xpos);
-        //svg.select(fisherman_id).attr('y', ypos);
         $(fisherman_id).animate({ x: xpos, y: ypos_string }, 1500);
-
-        /*    setTimeout(function () {
-          d3.select(fish_id).remove();
-        }, total_delay);*/
         numRemoved++;
-        // numFish--;
       }
     }
     if (numRemoved !== n) {
@@ -115,15 +107,10 @@ class Scene2 extends React.Component {
       <div>
         <header className="App-header">
           <h1>Scene 2</h1>
-          <p>You have fished {this.state.numFish} fishes.</p>
+          <p>You have fished {8 - this.state.numFish} fish.</p>
+          <p>There are now {this.state.numFish} fishes left</p>
 
           <div id="pond"> </div>
-          <div className="renderedD3">{this.props.chart}</div>
-          <button onclick="setUp()">Set Up Scene </button>
-          <button onclick="removeFish(4)">Remove Fish</button>
-          <button onclick="eraseAllFish()">Erase Fish</button>
-          <button onclick="addFish(2)">Redraw Fish</button>
-
           <Link
             to={{
               pathname: "/scene3",
