@@ -6,6 +6,8 @@ import App from "./App";
 import Scene1 from "./Components/Scene1";
 import Scene2 from "./Components/Scene2";
 import Scene3 from "./Components/Scene3";
+import OneFishBadEnd from "./Components/BadEndings/OneFishBadEnd";
+import FourFishBadEnd from "./Components/BadEndings/FourFishBadEnd";
 import * as serviceWorker from "./serviceWorker";
 
 const routing = (
@@ -15,6 +17,8 @@ const routing = (
       <Route path="/scene1" component={Scene1} />
       <Route path="/scene2" component={Scene2} />
       <Route path="/scene3" component={Scene3} />
+      <Route path="/OneFishBadEnd" component={OneFishBadEnd} />
+      <Route path="/FourFishBadEnd" component={FourFishBadEnd} />
     </div>
   </Router>
 );

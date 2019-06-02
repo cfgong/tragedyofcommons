@@ -11,7 +11,7 @@ function Scene1() {
 
         <Link
           to={{
-            pathname: "/scene2",
+            pathname: "/OneFishBadEnd",
             state: {
               numFish: 1
             }
@@ -50,7 +50,7 @@ function Scene1() {
 
         <Link
           to={{
-            pathname: "/scene2",
+            pathname: "/FourFishBadEnd",
             state: {
               numFish: 4
             }
