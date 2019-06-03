@@ -7,6 +7,11 @@ import pond from "./pond.png";
 import fish_url from "./fish2.png";
 import fisherman_url from "./fisherman.png";
 
+const divStyle = {
+  width: '50%',
+  margin: '0 auto'
+};
+
 class Scene2 extends React.Component {
   constructor(props) {
     super(props);
@@ -21,8 +26,8 @@ class Scene2 extends React.Component {
       .select("#pond")
       .append("svg")
       .attr({
-        width: 1000,
-        height: 500,
+        width: 600,
+        height: 400,
         border: "1px solid #ccc"
       });
 
@@ -102,6 +107,7 @@ class Scene2 extends React.Component {
     console.log("Drew the pond!");
   }
 
+
   render() {
     return (
       <div>
@@ -110,7 +116,7 @@ class Scene2 extends React.Component {
           <p>You have fished {8 - this.state.numFish} fish.</p>
           <p>There are now {this.state.numFish} fishes left</p>
 
-          <div id="pond"> </div>
+          <div id="pond" style={divStyle}> </div>
           <Link
             to={{
               pathname: "/scene3",
