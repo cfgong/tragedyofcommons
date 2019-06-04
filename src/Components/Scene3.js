@@ -12,6 +12,7 @@ class Scene3 extends React.Component {
         <header className="App-header">
           <h1>Scene 3</h1>
           <p>
+
             Here is where we show the ending you get depending on how much you
             fished!
           </p>
