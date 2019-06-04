@@ -22,7 +22,7 @@ function Scene4() {
     
         <Link
           to={{
-            pathname: "/",
+            pathname: "/scene5",
             state: {}
           }}
         >

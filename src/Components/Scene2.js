@@ -16,10 +16,15 @@ class Scene2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      numFish: this.props.location.state.numFish
+      numFished: this.props.location.state.numFished,
+      totalFish: this.props.location.state.totalFish,
+      round: this.props.location.state.round
     };
-    console.log("Number of fish: ", this.state.numFish);
+    console.log("Number of fish: ", this.state.numFished);
+    
+   
   }
+
 
   drawPond() {
     var svg = d3
@@ -61,8 +66,8 @@ class Scene2 extends React.Component {
     }
 
     // The number of fish the fisherman should remove
-    const n = 8 - this.state.numFish;
-    const maxFish = 8;
+    const n = this.state.numFished;
+    const maxFish = this.state.totalFish;
 
     var fisherman_id = "#fisher";
     if (svg.select(fisherman_id)[0][0] == null) {
@@ -103,6 +108,33 @@ class Scene2 extends React.Component {
   }
 
   componentDidMount() {
+    switch(this.state.round){
+      case 1:
+          if (this.state.numFished == 1){
+            this.setState({
+              pathname: "/scene4"
+            });
+          } else {
+            this.setState({
+              pathname: "/scene3"
+            });
+          }
+          break;
+      case 2:
+      default:
+          if (this.state.numFished == 1){
+            this.setState({
+              pathname: "/round2scene4"
+            });
+          } else {
+            this.setState({
+              pathname: "/round2scene3"
+            });
+          }
+          break;
+
+    }
+    console.log("the pathname is", this.state.pathname);
     this.drawPond();
     console.log("Drew the pond!");
   }
@@ -113,15 +145,16 @@ class Scene2 extends React.Component {
       <div>
         <header className="App-header">
           <h1>Scene 2</h1>
-          <p>You have fished {8 - this.state.numFish} fish.</p>
-          <p>There are now {this.state.numFish} fishes left</p>
+          <p>You have fished {this.state.numFished} fish.</p>
+          <p>There are now {this.state.totalFish - this.state.numFished} fishes left</p>
 
           <div id="pond" style={divStyle}> </div>
           <Link
             to={{
-              pathname: "/scene3",
+              pathname: this.state.pathname,
               state: {
-                numFish: this.state.numFish
+                numFished: this.state.numFished,
+                totalFish: this.state.totalFish
               }
             }}
           >

@@ -19,7 +19,7 @@ function Round2Scene3() {
     
         <Link
           to={{
-            pathname: "/",
+            pathname: "/scene5",
             state: {}
           }}
         >

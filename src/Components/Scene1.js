@@ -36,7 +36,9 @@ function Scene1() {
           to={{
             pathname: "/scene2",
             state: {
-              numFish: 7
+              numFished: 1,
+              totalFish: 10,
+              round: 1
             }
           }}
         >
@@ -49,7 +51,9 @@ function Scene1() {
           to={{
             pathname: "/scene2",
             state: {
-              numFish: 6
+              numFished: 2,
+              totalFish: 10,
+              round: 1
             }
           }}
         >
@@ -62,7 +66,9 @@ function Scene1() {
           to={{
             pathname: "/scene2",
             state: {
-              numFish: 5
+              numFished: 3,
+              totalFish: 10,
+              round: 1
             }
           }}
         >
@@ -75,7 +81,9 @@ function Scene1() {
           to={{
             pathname: "/scene2",
             state: {
-              numFish: 4
+              numFished: 4,
+              totalFish: 10,
+              round: 1
             }
           }}
         >

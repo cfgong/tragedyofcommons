@@ -46,10 +46,8 @@ function Scene5() {
 
            <Link
              to={{
-               pathname: "/scene2",
-               state: {
-                 numFish: 7
-               }
+               pathname: "/scene1",
+               state: {}
              }}
            >
              <Button variant="contained" color="secondary">
