@@ -121,7 +121,7 @@ class Scene2 extends React.Component {
             to={{
               pathname: "/scene3",
               state: {
-                numFish: 3
+                numFish: this.state.numFish
               }
             }}
           >
