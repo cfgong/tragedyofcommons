@@ -8,7 +8,6 @@ import fish_url from "./fish3.png";
 import fisherman_url from "./fisherman1.png";
 
 const divStyle = {
-  width: '50%',
   margin: '0 auto'
 };
 
@@ -29,7 +28,7 @@ class Scene2 extends React.Component {
       .select("#pond")
       .append("svg")
       .attr({
-        width: 600,
+        width: 800,
         height: 500,
         border: "1px solid #ccc"
       });
@@ -42,8 +41,8 @@ class Scene2 extends React.Component {
       .attr("width", 800)
       .attr("height", 600);
 
-    var x_locations = [225, 300, 700, 425, 350, 600, 550, 705, 500, 425];
-    var y_locations = [350, 375, 320, 335, 300, 300, 375, 400, 300, 390];
+    var x_locations = [225, 700, 425, 350, 600, 550, 705, 500, 425, 300];
+    var y_locations = [350, 320, 335, 300, 300, 375, 400, 300, 390, 375];
     const picture_height = 50;
     const picture_width = 50;
     var i = 0;
@@ -77,7 +76,7 @@ class Scene2 extends React.Component {
         .attr("height", 300)
         .attr("id", "fisher");
     }
-    var i;
+    i = 0;
     var numRemoved = 0;
     for (i = 0; i < this.state.totalFish; i++) {
       if (numRemoved === n) {
@@ -101,6 +100,7 @@ class Scene2 extends React.Component {
     if (numRemoved !== n) {
       alert("Error: Not Enough Fish to Remove");
     }
+    $(fisherman_id).animate({ x: 200, y: 250 }, 1500);
   }
 
   componentDidMount() {

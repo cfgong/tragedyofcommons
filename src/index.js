@@ -8,6 +8,7 @@ import Scene2 from "./Components/Scene2";
 import Scene3 from "./Components/Scene3";
 import Scene4 from "./Components/Scene4";
 import Scene5 from "./Components/Scene5";
+import Scene6 from "./Components/Scene6";
 import Round2Scene1 from "./Components/Round2Scene1";
 import Round2Scene3 from "./Components/Round2Scene3";
 import Round2Scene4 from "./Components/Round2Scene4";
@@ -24,6 +25,7 @@ const routing = (
       <Route path="/scene3" component={Scene3} />
       <Route path="/scene4" component={Scene4} />
       <Route path="/scene5" component={Scene5} />
+      <Route path="/scene6" component={Scene6} />
       <Route path="/round2scene1" component={Round2Scene1} />
       <Route path="/round2scene3" component={Round2Scene3} />
       <Route path="/round2scene4" component={Round2Scene4} />
