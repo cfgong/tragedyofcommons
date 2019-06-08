@@ -43,12 +43,12 @@ function Scene6() {
 
            <Link
              to={{
-               pathname: "/scene1",
+               pathname: "/scene7",
                state: {}
              }}
            >
              <Button variant="contained" color="secondary">
-               Play the Game Again
+               Next
              </Button>
            </Link>
          </header>
