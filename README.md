@@ -1,3 +1,17 @@
+# Tragedy of Commons Information Visualization
+View the demo [here](https://tragedyofcommons.herokuapp.com/)
+This project presents a interactive game, and mathematical explanation of the Tragedy of Commons.
+
+Resources:
+- [Fishing Tragedy of Commons Lesson Plan](https://earthwatch.org/Portals/0/Downloads/Education/Lesson-Plans/Go_Fish.pdf)
+- [Tragedy of Commons Explanation](https://fs.blog/2011/08/the-tragedy-of-the-commons/)
+Fisheries are a common example
+- [Math Derivations for the Tragedy of Commons](https://eml.berkeley.edu/~kariv/110_strategic_II.pdf)
+- [More Math Derivations](https://medium.com/engineer-quant/tragedy-of-the-commons-25b0348ba0b5)
+
+
+# React App Information
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
