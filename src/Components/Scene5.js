@@ -9,7 +9,8 @@ import fisherman_url_1 from "./fisherman1.png";
 import fisherman_url_2 from "./fisherman.png";
 
 const divStyle = {
-  width: '75%'
+  width: '75%',
+  marginTop: '-15px'
 };
 
 const linkStyle = {
@@ -137,6 +138,8 @@ render() {
     <div>
       <header className="App-header">
         <h1>Explanation of Tragedy of the Commons</h1>
+
+        <p><i>**Click on the underlined words in the order they appear to see our animation**</i> </p>
         <div style={divStyle}>
         <p>
         Our simple fishing game served to illustrate Tragedy of the Commons.

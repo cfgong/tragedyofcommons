@@ -8,7 +8,7 @@ import fish_url from "./fish2.png";
 import fisherman_url from "./fisherman.png";
 
 const divStyle = {
-  width: '50%',
+  width: '75%',
   margin: '0 auto'
 };
 
@@ -19,17 +19,18 @@ class Round2Scene1 extends React.Component {
       totalFish: this.props.location.state.totalFish
     };
     console.log("Number of fish: ", this.state.numFished);
-    
+
   }
 
   render() {
     return (
       <div>
         <header className="App-header">
-          <h1>Scene 1</h1>
+          <h1>Fishing Season Round 2</h1>
+          <div id="pond" style={divStyle}>
           <p>Another great year has passed in Commonville, and it is now fishing season again. There are now {this.state.totalFish} fishes in the pond. Once again, you can fish up to four schools of fish. Drawn by the allure of the delicious fish, more fishermen have come to town. Now there is enough fishermen to fish all the fish you don’t fish. </p>
 
-          <div id="pond" style={divStyle}> </div>
+           </div>
           <Link
           to={{
             pathname: "/scene2",

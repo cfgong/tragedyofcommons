@@ -140,9 +140,9 @@ class Scene2 extends React.Component {
     return (
       <div>
         <header className="App-header">
-          <h1>Scene 2</h1>
-          <p>You have fished {this.state.numFished} fish.</p>
-          <p>There are now {this.state.totalFish - this.state.numFished} fishes left</p>
+          <h1>Fishing Time</h1>
+          <p>You have fished {this.state.numFished} fish.<br/>
+          There are now {this.state.totalFish - this.state.numFished} fishes left</p>
 
           <div id="pond" style={divStyle}> </div>
           <Link

@@ -9,7 +9,8 @@ import fisherman_url_1 from "./fisherman1.png";
 import fisherman_url_2 from "./fisherman.png";
 
 const divStyle = {
-  width: '75%'
+  width: '75%',
+  marginTop: '-15px'
 };
 
 const linkStyle = {
@@ -170,6 +171,7 @@ render() {
     <div>
       <header className="App-header">
         <h1>Explanation of Tragedy of the Commons</h1>
+        <p><i>**Click on the buttons below to see the change in utility for each player as they harvest more fish**</i> </p>
         <div style={divStyle}>
         <p>
         This demonstrates both the positive and negative effect of fishing one more fish.
@@ -193,7 +195,7 @@ render() {
 
            <Link
              to={{
-               pathname: "/scene1",
+               pathname: "/scene8",
                state: {}
              }}
            >
