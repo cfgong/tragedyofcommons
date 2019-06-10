@@ -1,4 +1,5 @@
 # [Tragedy of Commons Information Visualization](https://tragedyofcommons.herokuapp.com/)
+Students: Ashu Gupta, Crystal Gong, Suzy (Sujung) Lee   
 View the demo [here](https://tragedyofcommons.herokuapp.com/)   
 Read the project proposal [here](https://docs.google.com/document/d/1YxtOR8BFvYGKEqLdDyud6MQVsdCdtRZ8c1wgVlAyAC8/edit?usp=sharing)   
 View the presentation slides [here](https://docs.google.com/presentation/d/1FelZxbr-8b5j0IKqVsynjpoFlkkPqBRzlaU6DEX-F0s/edit?usp=sharing)   
