@@ -39,11 +39,11 @@ const imgStyle3 = {
 }
 
 const linkStyle = {
-  color: 'white'
+  color: 'black'
 }
 
 const buttonStyle = {
-  color: 'white'
+  color: 'black'
 }
 
 const buttonRight = {

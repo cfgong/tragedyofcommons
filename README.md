@@ -1,5 +1,5 @@
-# Tragedy of Commons Information Visualization
-View the demo [here](https://tragedyofcommons.herokuapp.com/)
+# [Tragedy of Commons Information Visualization](https://tragedyofcommons.herokuapp.com/)
+View the demo [here](https://tragedyofcommons.herokuapp.com/)   
 This project presents a interactive game, and mathematical explanation of the Tragedy of Commons.
 
 Resources:
@@ -9,6 +9,8 @@ Fisheries are a common example
 - [Math Derivations for the Tragedy of Commons](https://eml.berkeley.edu/~kariv/110_strategic_II.pdf)
 - [More Math Derivations](https://medium.com/engineer-quant/tragedy-of-the-commons-25b0348ba0b5)
 
+Notes:
+- You might have to do CTRL-SHIFT-R to refresh the cache.
 
 # React App Information
 

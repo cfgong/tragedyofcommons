@@ -14,7 +14,7 @@ const divStyle = {
 };
 
 const linkStyle = {
-  color: 'white'
+  color: 'black'
 }
 
 class Scene5 extends React.Component {

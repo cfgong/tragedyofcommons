@@ -14,11 +14,11 @@ const divStyle = {
 };
 
 const linkStyle = {
-  color: 'white'
+  color: 'black'
 }
 
 const buttonStyle = {
-  color: 'white'
+  color: 'black'
 }
 
 const buttonRight = {
@@ -120,7 +120,7 @@ render() {
       .text( function (d) { return "Number Fished: " + numFished_1 + " Utility Score: " + calculate(1).toFixed(2);})
       .attr("font-family", "sans-serif")
       .attr("font-size", "20px")
-      .attr("fill", "white")
+      .attr("fill", "black")
       .attr("id", "utilityScore1");
   }
 
@@ -162,7 +162,7 @@ render() {
       .text( function (d) { return "Number Fished: " + numFished_2 + " Utility Score: " + calculate(2).toFixed(2);})
       .attr("font-family", "sans-serif")
       .attr("font-size", "20px")
-      .attr("fill", "white")
+      .attr("fill", "black")
       .attr("id", "utilityScore2");
   }
 
